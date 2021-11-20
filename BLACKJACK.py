@@ -48,3 +48,13 @@ print(">>> su puntuación es de", score , "puntos")
 main_banca = sample(lista_cartas, 2)
 score_banca = sum(cartas[carta] for carta in main_banca)
 print("La banca tiene: {} {} >> su puntuación es {}".format(main_banca[0], main_banca[1], score_banca))
+
+def comparar():
+    if score == 21 and score > score_banca:
+        print("Has ganado")
+    elif score == 21 and score == score_banca:
+        print("Empate técnico mister")
+    else:
+        print("a xuparla")
+
+comparar()
