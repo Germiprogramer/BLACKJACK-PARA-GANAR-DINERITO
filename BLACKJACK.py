@@ -24,13 +24,15 @@ cartas = {
 print("Cartas: {}". format(" ".join(cartas.keys())))
 print("Puntos: {}". format(list(cartas.values())))
 
-print("1\ Iteración estándar sobre un diccionario")
+#print("1\ Iteración estándar sobre un diccionario")
+print("Presentación de las cartas del juego y sus distintos valores:")
+
 for carta, valor in cartas.items():
     print("la carta {} vale {}".format(carta,valor))
 
-print("2\ Iteración ordenada sobre un diccionario")
-for carta in sorted(cartas.keys()):
-    print("la carta {} vale {}".format(carta,cartas[carta]))
+#print("2\ Iteración ordenada sobre un diccionario")
+#for carta in sorted(cartas.keys()):
+    #print("la carta {} vale {}".format(carta,cartas[carta]))
 
 print("3\ Black Jack")
 lista_cartas = list(cartas)
@@ -54,7 +56,16 @@ def comparar():
         print("Has ganado")
     elif score == 21 and score == score_banca:
         print("Empate técnico mister")
-    else:
-        print("a xuparla")
+    else: 
+        seguirjugando = input("¿Quieres coger otra carta?   si/no:    ")
+
+    if seguirjugando == "no":
+        print("La banca tiene: {} {} >> su puntuación es {}".format(main_banca[0], main_banca[1], score_banca))
+        if score_banca > score:
+            print("Has perdido :(")
+        if score > score_banca:
+            print("Has ganado :)")
+
+        
 
 comparar()
