@@ -59,12 +59,31 @@ def comparar():
     else: 
         seguirjugando = input("¿Quieres coger otra carta?   si/no:    ")
 
+    #if seguirjugando != "no" or "si":
+        #while True:
+            #seguirjugando = input("ELIGE BIEN ¿Quieres coger otra carta?   si/no:    ")
+    #else: 
+        #pass
+
     if seguirjugando == "no":
         print("La banca tiene: {} {} >> su puntuación es {}".format(main_banca[0], main_banca[1], score_banca))
         if score_banca > score:
             print("Has perdido :(")
         if score > score_banca:
             print("Has ganado :)")
+
+    if seguirjugando == "si":
+        carta = choice(lista_cartas)
+        newscore = score + cartas[carta]
+        print(carta, end=" ")
+        cartabanca 
+        print(">>> su puntuación es de", newscore , "puntos")
+        
+
+        if newscore > 21:
+            print("has perdido")
+
+
 
         
 
