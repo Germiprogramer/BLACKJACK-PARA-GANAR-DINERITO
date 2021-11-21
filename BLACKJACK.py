@@ -76,9 +76,10 @@ def comparar():
         carta = choice(lista_cartas)
         newscore = score + cartas[carta]
         print(carta, end=" ")
-        cartabanca 
+        cartabanca = choice(lista_cartas)
+        newscorebanca = score_banca + cartas[carta]
         print(">>> su puntuación es de", newscore , "puntos")
-        
+        print(">>> el score de la banca es de", newscorebanca, "puntos")
 
         if newscore > 21:
             print("has perdido")
