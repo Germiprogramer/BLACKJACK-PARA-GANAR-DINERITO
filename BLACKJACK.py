@@ -91,6 +91,8 @@ def comparar():
             print("has perdido")
         elif 21 >= newscore > score_banca:
             print("has ganado")
+        elif newscore and score_banca > 21:
+            print("banca y jugador han superado los 21, por tanto empate")
         
        
 
