@@ -72,7 +72,7 @@ def comparar():
 
     if seguirjugando == "no":
         print("La banca tiene: {} {} >> su puntuación es {}".format(main_banca[0], main_banca[1], score_banca))
-        if score_banca > score:
+        if 22 > score_banca > score:
             print("Has perdido :(")
         elif score > score_banca:
             print("Has ganado :)")
@@ -95,11 +95,4 @@ def comparar():
             print("banca y jugador han superado los 21, por tanto empate")
         
        
-
-        
-
-
-
-        
-
 comparar()
