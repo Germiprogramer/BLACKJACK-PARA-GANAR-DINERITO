@@ -51,6 +51,10 @@ main_banca = sample(lista_cartas, 2)
 score_banca = sum(cartas[carta] for carta in main_banca)
 #print("La banca tiene: {} {} >> su puntuación es {}".format(main_banca[0], main_banca[1], score_banca))
 
+if score_banca > 17:
+    cartabanca = choice(lista_cartas)
+    score_banca = score_banca + cartas[carta]
+
 def comparar():
     if score == 21 and score > score_banca:
         print("Has ganado")
@@ -92,7 +96,6 @@ def comparar():
         
         elif 21 >= newscore > newscorebanca:
             print("has ganado")
-        else: 
 
         
 
